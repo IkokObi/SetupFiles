@@ -21,4 +21,5 @@ pyenv local atcoder
 # install library
 pip install numpy scipy scikit-learn
 pip install ipython
+pip install jupyter
 
