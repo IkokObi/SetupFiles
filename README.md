@@ -25,7 +25,7 @@ $ bash SetAtCoder.sh
 ## Vimの設定
 ### 使い方
 - vimの最新版をインストール
-- neocompleteを使うためにvimを"--with lua"オプションでインストールする必要
+- neocompleteを使うためにvimを"--with lua"オプションでインストールしてください。
 
 
 ### 配置の仕方 
