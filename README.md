@@ -45,5 +45,6 @@ pluginの管理をするdeinの基本設定。読み込むpluginは"toml-files"�
 pluginの個別の設定。
 #### toml-files
 toml形式で記述するファイル。
+dein.tomlは毎回読み込まれ、dein_lazy.tomlは特定の条件で読み込まれる
 
 
