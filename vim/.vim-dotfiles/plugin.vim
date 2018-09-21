@@ -82,3 +82,6 @@ let g:vimtex_view_general_viewer
 let g:vimtex_view_general_options = '@line @pdf @tex'
 autocmd FileType tex syntax spell toplevel
 
+"===== NERDTreeの設定=====
+nnoremap <silent><Space>f :NERDTreeToggle<CR>
+

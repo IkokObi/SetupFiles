@@ -36,8 +36,8 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
-nnoremap 1 ^
-nnoremap 0 $
+noremap <Space>h  ^
+noremap <Space>l  $
 
 "===== 検索設定 =====
 set ignorecase "大文字、小文字の区別をしない
