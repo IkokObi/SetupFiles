@@ -1,0 +1,24 @@
+[[plugins]]
+repo = 'othree/yajs.vim'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = ['md', 'markdown']
+
+[[plugins]]
+repo = 'rbtnn/game_engine.vim'
+on_ft = ['text']
+
+[[plugins]]
+repo = 'rbtnn/puyo.vim'
+on_ft = ['text']
+
+[[plugins]]
+repo = 'rbtnn/mario.vim'
+on_ft = ['text']
+
+[[plugins]]
+repo = 'vim-scripts/TeTrIs.vim'
+on_ft = ['text']
+
