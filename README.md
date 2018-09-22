@@ -3,7 +3,9 @@
 
 ## List
 - SetAtCoder.sh
-  - AtCoderのpython3(3.4.3)の環境設定
+	- AtCoderのpython3(3.4.3)の環境設定
+- vim
+	- vimの各種設定ファイル	
 
 ## AtCoderの設定(SetAtCoder.sh)
 ### 実行方法
