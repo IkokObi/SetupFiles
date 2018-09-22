@@ -14,7 +14,7 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
+repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'lervag/vimtex'
@@ -45,4 +45,7 @@ repo = 'tyru/open-browser.vim'
 
 #[[plugins]]
 #repo = 'davidhalter/jedi-vim'
+
+#[[plugins]]
+#repo = 'ctrlpvim/ctrlp.vim'
 
