@@ -5,7 +5,7 @@
 - SetAtCoder.sh
 	- AtCoderのpython3(3.4.3)の環境設定
 - vim
-	- vimの各種設定ファイル	
+	- 公開リポジトリ"dotfiles"に移動しました
 
 ## AtCoderの設定(SetAtCoder.sh)
 ### 実行方法
