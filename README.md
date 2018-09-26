@@ -9,9 +9,12 @@
 
 ## AtCoderの設定(SetAtCoder.sh)
 ### 実行方法
+AtCoder環境にしたいディレクトリにSetAtCoder.shを配置して
 ```sh:title
 $ bash SetAtCoder.sh
 ```
+と実行してください。
+
 ### 以下のプラグインが必要
 - pyenv
 - pyenv-virtualenv
