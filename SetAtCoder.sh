@@ -19,8 +19,9 @@ pyenv virtualenv 3.4.3 atcoder
 pyenv local atcoder
 
 pip install ipython
-python -m ipykernel install --user --name atcoder --display-name "Python (AtCoder)"
 pip install jupyter
+python -m ipykernel install --user --name atcoder --display-name "Python (AtCoder)"
+# ipykernel is installed during jupyter installation
 
 # install library
 pip install numpy scipy scikit-learn
