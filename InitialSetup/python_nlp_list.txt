@@ -1,0 +1,15 @@
+ipython==6.5.0
+jupyter
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+numba
+beautifulsoup4
+tensorflow==1.10.1
+gensim==3.6.0
+mojimoji==0.0.8
+mecab-python3==0.7
+umap-learn==0.3.2
+pyknp==0.4
