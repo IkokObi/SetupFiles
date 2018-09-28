@@ -1,0 +1,9 @@
+ipython==6.5.0
+jupyter
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+numba
+tensorflow==1.10.1
