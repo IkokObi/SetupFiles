@@ -17,6 +17,8 @@
 macosの初期設定をする
 #### python_basic.sh
 pythonの基本的な環境を構築する
+#### python_research.sh
+研究に適した環境を構築する
 #### python_nlp.sh
 自然言語処理に適した環境を構築する
 
