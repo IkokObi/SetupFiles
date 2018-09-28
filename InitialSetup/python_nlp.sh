@@ -64,12 +64,10 @@ fi
 
 
 # Install specified version of python
-# 最初のオプションはmatplotlibを使うため
-# 	(参考URL) https://www.superharinezumi.com/entry/python-matplotlib
 # TensorFlowがpython 3.7.0 に対応していない
 Version='3.6.6'
 if ! pyenv versions | grep ${Version} > /dev/null 2>&1; then
-	PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install ${Version}
+	pyenv install ${Version}
 fi
 envname='nlp'
 dirname=".tempsetting_${envname}"
@@ -91,6 +89,9 @@ done
 # Install specific kernel
 python -m ipykernel install --user --name ${envname} --display-name "Python (${envname})"
 
+# matplotlib setting
+mpl_path=$(python -c "import matplotlib;print(matplotlib.matplotlib_fname())")
+sed -i -e "/^backend/s/macosx/Tkagg/" ${mpl_path}
 
 # delete temp directory
 cd ..
