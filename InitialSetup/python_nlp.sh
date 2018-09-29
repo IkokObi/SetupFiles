@@ -34,7 +34,7 @@ if ! type mecab > /dev/null 2>&1; then
 	git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 	cd mecab-ipadic-neologd
 	# yes yes | ./bin/install-mecab-ipadic-neologd -n -a
-	./bin/install-mecab-ipadic-neologd -n -a
+	yes | ./bin/install-mecab-ipadic-neologd -n -a
 	cd ${curdir}
 fi
 
