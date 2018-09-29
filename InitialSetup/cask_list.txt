@@ -1,2 +1,3 @@
 Google Chrome,google-chrome
 Sourcetree,sourcetree
+Dropbox,dropbox
