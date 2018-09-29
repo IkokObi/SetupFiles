@@ -73,10 +73,12 @@ pyenv local ${Version}
 # Install library
 pip install --upgrade pip
 for lib in `cat ./../python_${envname}_list.txt`; do
-	pip install ${lib}
-	echo "========================"
-	echo "Installed ${lib}!"
-	echo "========================"
+	if [ ${lib:0:1} != "#" ]; then
+		pip install ${lib}
+		echo "========================"
+		echo "Installed ${lib}!"
+		echo "========================"
+	fi
 done
 
 
