@@ -6,8 +6,7 @@
 #
 # 	Files=(\
 # 	init.sh \
-# 	python_basic.sh \
-#	python_research.sh \
+# 	python_normal.sh \
 # 	# python_nlp.sh \
 # 	)
 #
@@ -16,8 +15,7 @@
 
 Files=(\
 init.sh \
-python_basic.sh \
-python_research.sh \
+python_normal.sh \
 python_nlp.sh \
 )
 
