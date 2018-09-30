@@ -10,13 +10,18 @@
 brew cask install mactex
 # ターミナルの再起動が必要かも
 sudo tlmgr update --self --all
+
 sudo tlmgr repository add http://contrib.texlive.info/current tlcontrib
 sudo tlmgr pinning add tlcontrib '*'
 sudo tlmgr install japanese-otf-nonfree japanese-otf-uptex-nonfree ptex-fontmaps-macos cjk-gs-integrate-macos
+
 sudo cjk-gs-integrate --link-texmf --cleanup --force
 sudo cjk-gs-integrate-macos --link-texmf --force
 sudo mktexlsr
 
 # skimのインストール
 brew cask install skim
+
+# jlistingのインストール(以下を参考)
+# http://www.takunoko.com/blog/mac%E3%81%ABjlisting-sty%E3%82%92%E5%B0%8E%E5%85%A5-tex/
 
