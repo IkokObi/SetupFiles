@@ -24,5 +24,7 @@ python -m ipykernel install --user --name atcoder --display-name "Python (AtCode
 # ipykernel is installed during jupyter installation
 
 # install library
-pip install numpy scipy scikit-learn
+pip install numpy==1.8.2
+pip install scipy==0.13.3
+pip install scikit-learn
 
