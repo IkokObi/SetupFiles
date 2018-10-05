@@ -35,7 +35,8 @@ for app in `cat brew_list.txt`; do
 done
 
 # オプション付きインストール
-if ! type vim > /dev/null 2>&1; then
+if vim --version | grep -lua > /dev/null 2>&1; then
+	brew uninstall vim
 	brew Install vim --with-lua
 fi
 
