@@ -45,7 +45,7 @@ while read line
 do
 	App_name=`echo ${line} | cut -d"," -f1`
 	Install_name=`echo ${line} | cut -d"," -f2`
-	if ! ls /Applications/ | grep ${App_name} > /dev/null 2>&1; then
+	if ! ls /Applications/ | grep "${App_name}" > /dev/null 2>&1; then
 		brew cask install ${Install_name}
 	else
 		echo "Installed ${App_name}"
@@ -58,7 +58,7 @@ while read line
 do
 	App_name=`echo ${line} | cut -d"," -f1`
 	Install_name=`echo ${line} | cut -d"," -f2`
-	if ! ls /Applications/ | grep ${App_name} > /dev/null 2>&1; then
+	if ! ls /Applications/ | grep "${App_name}" > /dev/null 2>&1; then
 		mas install ${Install_num}
 	else
 		echo "Installed ${App_name}"
