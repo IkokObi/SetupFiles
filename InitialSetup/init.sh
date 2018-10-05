@@ -43,10 +43,8 @@ fi
 # Install by cask
 while read line
 do
-	IFS=','
-	set -- $line
-	App_name=$1
-	Install_name=$2
+	App_name=`echo ${line} | cut -d"," -f1`
+	Install_name=`echo ${line} | cut -d"," -f2`
 	if ! ls /Applications/ | grep ${App_name} > /dev/null 2>&1; then
 		brew cask install ${Install_name}
 	else
@@ -58,10 +56,8 @@ done < ./cask_list.txt
 # # Install by mas
 while read line
 do
-	IFS=','
-	set -- $line
-	App_name=$1
-	Install_num=$2
+	App_name=`echo ${line} | cut -d"," -f1`
+	Install_name=`echo ${line} | cut -d"," -f2`
 	if ! ls /Applications/ | grep ${App_name} > /dev/null 2>&1; then
 		mas install ${Install_num}
 	else
