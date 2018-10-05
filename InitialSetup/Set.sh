@@ -8,6 +8,7 @@
 # 	init.sh \
 # 	python_normal.sh \
 # 	# python_nlp.sh \
+#	tex_setup.sh \
 # 	)
 #
 # ==================================
@@ -17,6 +18,7 @@ Files=(\
 init.sh \
 python_normal.sh \
 python_nlp.sh \
+tex_setup.sh \
 )
 
 for s in ${Files[@]}; do
