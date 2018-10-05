@@ -57,7 +57,7 @@ $ pyenv versions
 ```
 AtCoderに取り組むディレクトリ内で以下のように仮想環境を設定してください。
 ```
-pyenv local atcoder
+$ pyenv local atcoder
 ```
 
 ### 設定される環境
