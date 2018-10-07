@@ -34,7 +34,7 @@ $ cd SetupFiles/InitialSetup
 ```
 Set.shを保存したら以下を実行してください。
 ```
-$ bash Set.sh
+$ source Set.sh
 ```
 
 <a name="AtCoder"></a>
@@ -51,9 +51,10 @@ $ git clone https://github.com/IkokObi/SetupFiles.git
 AtCoderSetupディレクトリに入り、以下のように実行してください。
 ```
 $ cd SetupFiles/AtCoderSetup
-$ bash atcoder_env.sh
+$ source atcoder_env.sh
 ```
 ここまででpyenvの仮想環境に"atcoder"と名前のついたpython環境があるはずです。
+以下のコマンドで仮想環境の一覧が表示されます。
 ```
 $ pyenv versions
 ```
