@@ -11,7 +11,7 @@
 # - KNP
 # - packages in python_nlp_list.txt 
 # ========================
-Version='anaconda3-5.2.0'
+Version=anaconda3-5.2.0
 
 
 
