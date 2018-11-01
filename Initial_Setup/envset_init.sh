@@ -66,4 +66,3 @@ do
 	fi
 done < ./mas_list.txt
 
-
