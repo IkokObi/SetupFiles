@@ -4,11 +4,11 @@
 ## List
 - [Initial_Setup](#Initial_Setup)
 	- macの初期設定
-- [Python_Setup](#Python)
+- [Python_Setup](#Python_Setup)
 	- Pythonの環境構築
-- [NLP_Setup](#NLP)
+- [NLP_Setup](#NLP_Setup)
 	- 自然言語処理の環境構築
-- [AtCoder_Setup](#AtCoder)
+- [AtCoder_Setup](#AtCoder_Setup)
 	- AtCoderのpython3(3.4.3)の環境設定
 - vim
 	- 公開リポジトリ<a href="https://github.com/IkokObi/dotfiles" target="_blank">dotfiles</a>に移動しました
@@ -41,7 +41,6 @@ $ . (Target).sh
 - mactex2018の環境を構築する
 
 
-<a name="Python"></a>
 ## Python_Setup
 #### envset_python.sh
 - pyenvを通じてpython(anaconda等)をインストール
@@ -51,13 +50,11 @@ $ . (Target).sh
 - pip経由でインストールするライブラリ
 
 
-<a name="NLP"></a>
 ## NLP_Setup
 #### envset_nlp.sh
 - MeCab, neologd, JUMAN++, JUMAN, KNPをインストール
 
 
-<a name="AtCoder"></a>
 ## AtCoderSetup
 ### 以下のプラグインが必要
 - pyenv
@@ -95,5 +92,4 @@ ipythonやjupyter-notebookを使えるようにしてあります。
 
 ### 経緯
 最大公約数を求めるmath.gcdがpython3.4.3では使えず、これが原因でWAになったため
-
 
