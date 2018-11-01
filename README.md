@@ -2,7 +2,7 @@
 各種環境の設定を行うファイルをまとめています。
 
 ## List
-- [Initial_Setup](#Initial)
+- [Initial_Setup](#Initial_Setup)
 	- macの初期設定
 - [Python_Setup](#Python)
 	- Pythonの環境構築
@@ -28,7 +28,6 @@ $ cd SetupFiles/(Target)_Setup
 $ . (Target).sh
 ```
 
-<a name="Initial"></a>
 ## Initial_Setup
 #### envset_init.sh
 - macosの初期設定をする
