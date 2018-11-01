@@ -9,9 +9,9 @@
 # ------------
 # - Homebrew
 # - vim
-# - brew_list内のファイル
-# - cask_list内のファイル
-# - mas_list内のファイル
+# - brew_list.txt内のファイル
+# - cask_list.txt内のファイル
+# - mas_list.txt内のファイル
 # ========================
 
 
@@ -25,7 +25,7 @@ if ! type brew > /dev/null 2>&1; then
 fi
 
 
-# Install by Homebrew
+# Install app in "brew_list.txt" by Homebrew
 for app in `cat brew_list.txt`; do
   if ! type ${app} > /dev/null 2>&1; then
     brew install ${app}
@@ -41,7 +41,7 @@ if vim --version | grep -lua > /dev/null 2>&1; then
 fi
 
 
-# Install by cask
+# Install app in "cask_list.txt" by cask
 while read line
 do
 	App_name=`echo ${line} | cut -d"," -f1`
@@ -54,7 +54,7 @@ do
 done < ./cask_list.txt
 
 
-# # Install by mas
+# # Install app in "mas_list.txt" by mas
 while read line
 do
 	App_name=`echo ${line} | cut -d"," -f1`
