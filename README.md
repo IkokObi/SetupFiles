@@ -2,40 +2,61 @@
 各種環境の設定を行うファイルをまとめています。
 
 ## List
-- [InitialSetup](#InitialSetup)
-	- macの初期設定, pythonの環境構築等
-- [AtCoderSetup](#AtCoder)
+- [Initial_Setup](#Initial)
+	- macの初期設定
+- [Python_Setup](#Python)
+	- Pythonの環境構築
+- [NLP_Setup](#NLP)
+	- 自然言語処理の環境構築
+- [AtCoder_Setup](#AtCoder)
 	- AtCoderのpython3(3.4.3)の環境設定
 - vim
 	- 公開リポジトリ<a href="https://github.com/IkokObi/dotfiles" target="_blank">dotfiles</a>に移動しました
-
-<a name="InitialSetup"></a>
-## InitialSetup
-### 設定の中身
-#### Set.sh
-後述のスクリプトのどれを実行するかをまとめているコード
-#### init.sh
-macosの初期設定をする
-#### python_normal.sh
-pythonの基本的な環境を構築する
-#### python_nlp.sh
-自然言語処理に適した環境を構築する
-#### tex_setup.sh
-mactex2018の環境を構築する
 
 ### 実行方法
 私のgithubのリポジトリをクローンしてください。
 ```
 $ git clone https://github.com/IkokObi/SetupFiles.git
 ```
-InitialSetupディレクトリに入り、Set.shを開いて実行しないスクリプトを"#"でコメントアウトしてください。
+設定したい環境のディレクトリに入ってください(ここでは"(Target)"と表現しています)
 ```
-$ cd SetupFiles/InitialSetup
+$ cd SetupFiles/(Target)_Setup
 ```
-Set.shを保存したら以下を実行してください。
+以下のようにしてシェルスクリプトを実行してください。
+(ドット[半角スペース]"シェルスクリプト名".sh)
 ```
-$ source Set.sh
+$ . (Target).sh
 ```
+
+<a name="Initial"></a>
+## Initial_Setup
+#### envset_init.sh
+- macosの初期設定をする
+#### brew_list.txt
+- Homebrewでインストールするアプリ
+#### cask_list.txt
+- Homebrew-caskでインストールするアプリ
+#### mas_list.txt
+- masでインストールするApp Storeのアプリ
+#### envset_tex.sh
+- mactex2018の環境を構築する
+
+
+<a name="Python"></a>
+## Python_Setup
+#### envset_python.sh
+- pyenvを通じてpython(anaconda等)をインストール
+#### conda.txt
+- conda経由でインストールするライブラリ
+#### pip.txt
+- pip経由でインストールするライブラリ
+
+
+<a name="NLP"></a>
+## NLP_Setup
+#### envset_nlp.sh
+- MeCab, neologd, JUMAN++, JUMAN, KNPをインストール
+
 
 <a name="AtCoder"></a>
 ## AtCoderSetup
@@ -51,7 +72,7 @@ $ git clone https://github.com/IkokObi/SetupFiles.git
 AtCoderSetupディレクトリに入り、以下のように実行してください。
 ```
 $ cd SetupFiles/AtCoderSetup
-$ source atcoder_env.sh
+$ . atcoder_env.sh
 ```
 ここまででpyenvの仮想環境に"atcoder"と名前のついたpython環境があるはずです。
 以下のコマンドで仮想環境の一覧が表示されます。
