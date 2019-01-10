@@ -9,7 +9,7 @@
 Version=anaconda3-5.2.0
 
 
-# Install both pyenv and pyenv-virtualenv
+# Install both pyenv
 if ! type pyenv > /dev/null 2>&1; then
 	brew update
 	brew install pyenv
