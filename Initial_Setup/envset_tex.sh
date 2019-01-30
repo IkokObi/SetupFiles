@@ -21,6 +21,9 @@ sudo cjk-gs-integrate --link-texmf --cleanup --force
 sudo cjk-gs-integrate-macos --link-texmf --force
 sudo mktexlsr
 
+# フォントの埋め込み
+sudo kanji-config-updmap-sys --jis2004 hiragino-highsierra-pron
+
 # skimのインストール
 brew cask install skim
 
