@@ -16,3 +16,5 @@ flake8==3.6.0
 plotly==3.4.1
 optuna
 selenium
+tqdm
+sentencepiece
