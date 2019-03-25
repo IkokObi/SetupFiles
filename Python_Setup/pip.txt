@@ -18,3 +18,5 @@ optuna
 selenium
 tqdm
 sentencepiece
+starlette==0.8
+responder==1.2.0
