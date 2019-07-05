@@ -19,4 +19,5 @@ selenium
 tqdm
 sentencepiece
 starlette==0.8
-responder==1.2.0
+responder==1.1.2
+#uvicorn==0.4.6
