@@ -1,8 +1,14 @@
-#!/bin/bash
+#!/bin/bash -eu
 
-conda create --name test python=3.7\
+env_name="test"
+conda create --name ${env_name} python=3.7\
        	numpy\
        	pandas\
        	matplotlib\
        	scipy\
-       	jupyter
+       	jupyter\
+	-y
+conda activate ${env_name}
+conda install -c conda-forge jupyter_contrib_nbextensions -y
+
+# conda remove -n imb-learn --all
