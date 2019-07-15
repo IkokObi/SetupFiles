@@ -11,4 +11,4 @@ conda create --name ${env_name} python=3.7\
 conda activate ${env_name}
 conda install -c conda-forge jupyter_contrib_nbextensions -y
 
-# conda remove -n imb-learn --all
+# conda remove -n test --all
