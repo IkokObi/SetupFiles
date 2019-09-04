@@ -13,7 +13,7 @@ mecab-python3==0.7
 umap-learn==0.3.2
 pyknp==0.4
 flake8==3.6.0
-plotly==3.4.1
+plotly
 optuna
 selenium
 tqdm
