@@ -9,6 +9,7 @@ conda create --name ${env_name} python=3.7\
        	jupyter\
 	tqdm\
 	pillow\
+	scikit-learn\
 	-y
 conda activate ${env_name}
 conda install -c conda-forge jupyter_contrib_nbextensions -y

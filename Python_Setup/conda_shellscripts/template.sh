@@ -7,6 +7,7 @@ conda create --name ${env_name} python=3.7\
        	matplotlib\
        	scipy\
        	jupyter\
+	flake8\
 	-y
 conda activate ${env_name}
 conda install -c conda-forge jupyter_contrib_nbextensions -y
