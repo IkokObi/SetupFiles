@@ -33,7 +33,7 @@ pyenv local ${Version}
 # Install library with pip
 echo "===== Installation with pip started ====="
 pip install --upgrade pip
-for lib in `cat ./../pip.txt`; do
+for lib in `cat ./../packages/pip.txt`; do
 	if [ ${lib:0:1} != "#" ]; then
 		pip install ${lib}
 		echo "========================"
@@ -44,7 +44,7 @@ done
 
 # Install library with conda
 echo "===== Installation with conda started ====="
-for lib in `cat ./../conda.txt`; do
+for lib in `cat ./../packages/conda.txt`; do
 	if [ ${lib:0:1} != "#" ]; then
 		conda install -c conda-forge ${lib}
 		echo "========================"
