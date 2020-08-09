@@ -4,3 +4,6 @@ scikit-learn
 scipy
 matplotlib
 numba
+tqdm
+jupyter
+jupyter_contrib_nbextensions
